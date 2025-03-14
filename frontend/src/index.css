@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+    --red: #ff0000;
+}
+
+input[type="number"].primary, input[type="email"].primary, input[type="password"].primary, input[type="text"].primary {
+    @apply border-1 border-gray-400 rounded-xl px-3 py-1 w-full lg:w-[500px] outline-0 text-gray-800 focus:shadow-sm focus:shadow-gray-500
+}
+
+
+button.primary {
+    @apply 
+        border-1
+      border-white
+      text-white
+        bg-[var(--red)] 
+        outline-0 
+        rounded-xl 
+        px-4
+        py-2
+        text-xl 
+        transition 
+        duration-200
+        focus:scale-[95%] 
+        hover:scale-[105%]
+        cursor-pointer
+}
+
+
+
+
+.header-link-div {
+    @apply flex items-center justify-center hover:bg-black hover:text-white py-1 text-sm transition duration-200
+}
+
+.header-link {
+    @apply px-3 py-2 border-r hover:border-0; 
+}
+
+.header-link-start {
+    @apply rounded-l-3xl border-r px-3 py-2 hover:border-0;
+}
+
+.header-link-end {
+    @apply rounded-r-3xl px-3 py-2 hover:border-0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
